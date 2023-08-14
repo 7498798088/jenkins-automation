@@ -37,7 +37,7 @@ module "eks" {
     vpc_id = module.jenkins-server-vpc
     subnet_ids = module.jenkins-server-vpc.private_subnets
 
-    tags {
+    tags = {
         environment = "development"
         application = "myjenkins-server"
     }
