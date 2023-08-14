@@ -1,8 +1,8 @@
-variable "private_subnets_cidr_blocks" {
+variable "private_subnet_cidr_blocks" {
   type = list(string)
 }
 
-variable "public_subnets_cidr_blocks" {
+variable "public_subnet_cidr_blocks" {
   type = list(string)
 }
    
