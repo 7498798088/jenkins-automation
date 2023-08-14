@@ -17,12 +17,12 @@ module "jenkins-server-vpc" {
     "kubernetes.io/cluster/jenkins-server-eks-cluster" = "shared"
   }
 
-  public_subnets_tags = {
+  public_subnet_tags = {
       "kubernetes.io/cluster/jenkins-server-eks-cluster" = "shared"
       "kubernetes.io/role/elb" = 1
   }
 
-  private_subnets_tags = {
+  private_subnet_tags = {
       "kubernetes.io/cluster/jenkins-server-eks-cluster" = "shared"
       "kubernetes.io/role/internal.elb" = 1
   }
