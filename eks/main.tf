@@ -5,7 +5,7 @@ module "jenkins-server-vpc" {
   name = "jenkins-server-vpc"
   cidr = var.vpc_cidr_block
 
-  azs             = data.aws_availabity_zones.azs.names
+  azs             = data.aws_availability_zones.azs.names
   private_subnets = var.private_subnet_cidr_blocks
   public_subnets  = var.public_subnet_cidr_blocks
 
